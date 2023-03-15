@@ -1,0 +1,192 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BusinessLayer</name>
+    </assembly>
+    <members>
+        <member name="T:BusinessLayer.Migrations.CustomMigration">
+            <summary>
+            Custom Migration for initial values
+            </summary>
+        </member>
+        <member name="M:BusinessLayer.Migrations.CustomMigration.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <summary>
+            Method for migration
+            </summary>
+            <param name="migrationBuilder">Injected builder</param>
+        </member>
+        <member name="M:BusinessLayer.Migrations.CustomMigration.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <summary>
+            Method for downgrade
+            </summary>
+            <param name="migrationBuilder">Injected builder</param>
+        </member>
+        <member name="T:BusinessLayer.Migrations.CustomUser">
+            <summary>
+            Custom Migration for initial values
+            </summary>
+        </member>
+        <member name="M:BusinessLayer.Migrations.CustomUser.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <summary>
+            Method for migration
+            </summary>
+            <param name="migrationBuilder">Injected builder</param>
+        </member>
+        <member name="M:BusinessLayer.Migrations.CustomUser.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <summary>
+            Method for downgrade
+            </summary>
+            <param name="migrationBuilder">Injected builder</param>
+        </member>
+        <member name="T:BusinessLayer.Migrations.init">
+            <inheritdoc />
+        </member>
+        <member name="M:BusinessLayer.Migrations.init.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:BusinessLayer.Migrations.init.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:BusinessLayer.Migrations.init.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:BusinessLayer.DataContext">
+            <summary>
+            EF Data Context
+            </summary>
+        </member>
+        <member name="F:BusinessLayer.DataContext.Configuration">
+            <summary>
+            Configuration
+            </summary>
+        </member>
+        <member name="P:BusinessLayer.DataContext.Address">
+            <summary>
+            DBset Address
+            </summary>
+            <value>Address set</value>
+        </member>
+        <member name="P:BusinessLayer.DataContext.Hotels">
+            <summary>
+            DBset of Hotels
+            </summary>
+            <value>Hotels set</value>
+        </member>
+        <member name="P:BusinessLayer.DataContext.Users">
+            <summary>
+            DBset of Users
+            </summary>
+            <value>Users set</value>
+        </member>
+        <member name="M:BusinessLayer.DataContext.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Data Context constructor
+            </summary>
+            <param name="configuration">Injected configuration</param>
+        </member>
+        <member name="M:BusinessLayer.DataContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)">
+            <summary>
+            Connection to database
+            </summary>
+            <param name="options">Injected options</param>
+        </member>
+        <member name="T:BusinessLayer.Models.Authorization.LoginModel">
+            <summary>
+            Login Model
+            </summary>
+        </member>
+        <member name="P:BusinessLayer.Models.Authorization.LoginModel.UserName">
+            <summary>
+            UserName
+            </summary>
+            <value>UserName</value>
+        </member>
+        <member name="P:BusinessLayer.Models.Authorization.LoginModel.Password">
+            <summary>
+            Password
+            </summary>
+            <value>Password</value>
+        </member>
+        <member name="T:BusinessLayer.Models.Authorization.TokenModel">
+            <summary>
+            Token Model
+            </summary>
+        </member>
+        <member name="P:BusinessLayer.Models.Authorization.TokenModel.Token">
+            <summary>
+            Token
+            </summary>
+            <value>Token</value>
+        </member>
+        <member name="T:BusinessLayer.Models.AddressDTO">
+            <summary>
+            Address DTO
+            </summary>
+        </member>
+        <member name="P:BusinessLayer.Models.AddressDTO.Id">
+            <summary>
+            Id of address
+            </summary>
+        </member>
+        <member name="P:BusinessLayer.Models.AddressDTO.Street">
+            <summary>
+            Street
+            </summary>
+        </member>
+        <member name="P:BusinessLayer.Models.AddressDTO.Number">
+            <summary>
+            Number
+            </summary>
+        </member>
+        <member name="P:BusinessLayer.Models.AddressDTO.ZipCode">
+            <summary>
+            ZipCode
+            </summary>
+        </member>
+        <member name="P:BusinessLayer.Models.AddressDTO.City">
+            <summary>
+            City
+            </summary>
+        </member>
+        <member name="T:BusinessLayer.Models.HotelsDTO">
+            <summary>
+            Hotels DTO
+            </summary>
+        </member>
+        <member name="P:BusinessLayer.Models.HotelsDTO.Id">
+            <summary>
+            Id of Hotel
+            </summary>
+        </member>
+        <member name="P:BusinessLayer.Models.HotelsDTO.Name">
+            <summary>
+            Name of hotel
+            </summary>
+        </member>
+        <member name="P:BusinessLayer.Models.HotelsDTO.Price">
+            <summary>
+            Price
+            </summary>
+        </member>
+        <member name="P:BusinessLayer.Models.HotelsDTO.longitude">
+            <summary>
+            Geoloation longitude
+            </summary>
+        </member>
+        <member name="P:BusinessLayer.Models.HotelsDTO.latitude">
+            <summary>
+            Geolocation latitude
+            </summary>
+        </member>
+        <member name="P:BusinessLayer.Models.HotelsDTO.Distance">
+            <summary>
+            Distance from User
+            </summary>
+        </member>
+        <member name="P:BusinessLayer.Models.HotelsDTO.Address">
+            <summary>
+            Address
+            </summary>
+        </member>
+    </members>
+</doc>
